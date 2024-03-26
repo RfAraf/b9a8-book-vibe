@@ -6,7 +6,7 @@ const Nav = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive && "bg-none  border border-[#23BE0A] text-[#23BE0A]"
+            isActive && "bg-white  border border-[#23BE0A] text-[#23BE0A]"
           }
           to="/"
         >
@@ -16,7 +16,7 @@ const Nav = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive && "bg-none  border border-[#23BE0A] text-[#23BE0A]"
+            isActive && "bg-white  border border-[#23BE0A] text-[#23BE0A]"
           }
           to="/listed-books"
         >
@@ -26,7 +26,7 @@ const Nav = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive && "bg-none  border border-[#23BE0A] text-[#23BE0A]"
+            isActive && "bg-white  border border-[#23BE0A] text-[#23BE0A]"
           }
           to="/pages-to-read"
         >

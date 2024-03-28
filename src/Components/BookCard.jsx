@@ -2,9 +2,11 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { BsPeople } from "react-icons/bs";
 import { FaRegFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ book }) => {
   const {
+    bookId,
     image,
     bookName,
     author,
@@ -55,9 +57,11 @@ const BookCard = ({ book }) => {
               <div className="py-1 px-5 rounded-full bg-[#FFAC3326] w-max">
                 <h3 className="text-[#FFAC33]">Rating: {rating}</h3>
               </div>
-              <button className="py-1 px-5 rounded-full text-white bg-[#23BE0A]">
-                View Details
-              </button>
+              <Link to={`/book/${bookId}`}>
+                <button className="py-1 px-5 rounded-full text-white bg-[#23BE0A]">
+                  View Details
+                </button>
+              </Link>
             </div>
           </div>
         </div>

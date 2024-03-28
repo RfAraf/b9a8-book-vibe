@@ -24,7 +24,9 @@ const ListedBooks = () => {
           Wishlist Books
         </NavLink>
       </div>
-      <Outlet></Outlet>
+      <div className="px-5 lg:px-0">
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

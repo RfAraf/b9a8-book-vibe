@@ -27,7 +27,7 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="hero mt-10 ">
+    <div className="hero my-10 px-5 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
         <img src={image} className="bg-[#1313130D] w-full p-20 rounded-lg " />
         <div className="space-y-4 ">

@@ -11,7 +11,7 @@ const Books = () => {
   }, []);
 
   return (
-    <div className="space-y-10 pb-20">
+    <div className="space-y-10 pb-20 ">
       <h1 className="text-center font-extrabold text-4xl">Books</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {books.map((book) => (

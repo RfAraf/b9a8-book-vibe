@@ -19,7 +19,7 @@ const BookCard = ({ book }) => {
     <div>
       <div className=" mb-6 border rounded-2xl">
         <div className="p-4 gap-6 flex flex-col justify-start lg:flex-row">
-          <figure className="bg-gray-100 w-52 rounded-2xl">
+          <figure className="bg-gray-100 md:w-52 rounded-2xl">
             <img src={image} className="py-5 mx-auto" alt="book" />
           </figure>
           <div className="space-y-4">
@@ -32,11 +32,14 @@ const BookCard = ({ book }) => {
                   <li key={idx}>{tag}</li>
                 ))}
               </ul>
-              <p className="flex justify-center items-center gap-3">
+              <p className="flex justify-center items-center gap-3 hidden md:flex">
                 <IoLocationOutline /> Year of Publishing: {yearOfPublishing}
               </p>
             </div>
             <div className="flex  gap-4">
+              <p className="flex justify-center items-center gap-3 md:hidden ">
+                <IoLocationOutline /> Year of Publishing: {yearOfPublishing}
+              </p>
               <p className="flex justify-center items-center gap-3">
                 <BsPeople /> Publisher: {publisher}
               </p>

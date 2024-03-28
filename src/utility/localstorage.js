@@ -10,7 +10,6 @@ const getStoredBooks = () => {
 
 const saveBooks = (id) => {
   const storedBooks = getStoredBooks();
-  console.log(storedBooks);
   const exists = storedBooks.find((idOfBook) => idOfBook === id);
   if (!exists) {
     storedBooks.push(id);

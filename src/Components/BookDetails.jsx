@@ -19,11 +19,11 @@ const BookDetails = () => {
   } = book;
 
   const handleRead = () => {
-    saveBooks(id);
+    saveBooks(parseInt(id));
   };
 
   const handleWishlist = () => {
-    saveWishBooks(id);
+    saveWishBooks(parseInt(id));
   };
 
   return (
